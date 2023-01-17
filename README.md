@@ -33,7 +33,9 @@ Sometimes:
 3 - The script will look in the variable that contains the names of the barren dungeons (created previously in step 4 and 5 of "Barren") for the names of the corresponding checks for those dungeons.
 4 - It will include them in the variable from step 2
 5 - Creation of a list that stores all the checks excluded in the ruleset
-6 - Selects 3 checks randomly from the item placement list in the spoiler log, excluding the barren dungeon checks and those excluded in the ruleset.
+6 - Creation of a list that stores all barren checks
+7 - Exclude from these lists the checks sometimes
+8 - Selects 3 checks randomly from the item placement list in the spoiler log, excluding the barren dungeon checks, the barren ones, and those excluded in the ruleset.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -73,5 +75,7 @@ Sometimes :
     dans l'étape 4 et 5 de "Barren") les noms des checks correspondants à ces donjons.
 4 - Il va les inclure dans la variable de l'étape 2
 5 - Création d'une liste qui stock tous les checks exclus dans le ruleset
-6 - Sélectionne au hasard 3 checks de la liste du placement des items du spoiler log, en excluant les
+6 - Création d'une liste qui stock tous les checks barren
+7 - Exclusion de ces listes aux checks sometimes
+8 - Sélectionne au hasard 3 checks de la liste du placement des items du spoiler log, en excluant les
     checks des donjons barren et ceux exclus dans le ruleset.
