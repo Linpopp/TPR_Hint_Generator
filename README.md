@@ -4,6 +4,7 @@ EN
 How to use :
 
 1 - Install Python 3 on your PC (Windows store for example)
+
 2 - Install the openpyxl, glob2 and jinja2 libraries. To do this, enter the following commands one by one in a CMD:
 pip install openpyxl
 pip install glob2
