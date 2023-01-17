@@ -1,7 +1,17 @@
 # TPR_Hint_Generator
+EN
 
 How to use :
 
+1 - Install Python 3 on your PC (Windows store for example)
+2 - Install the openpyxl, glob2 and jinja2 libraries. To do this, enter the following commands one by one in a CMD:
+pip install openpyxl
+pip install glob2
+pip install jinja2
+3 - Place the spoiler_log of the seed in the same folder as the script (be careful, there should only be one)
+3 - Open a CMD at the root of the project (where the hint.py script is located)
+4 - Type the following command: python3 hint.py
+5 - The hint_list.txt and hint_list.xlsx files will be generated in the same folder as the script (do not run the script if one of these files is open on your PC)
 
 Script explanation:
 
@@ -38,6 +48,19 @@ Sometimes:
 8 - Selects 3 checks randomly from the item placement list in the spoiler log, excluding the barren dungeon checks, the barren ones, and those excluded in the ruleset.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+FR
+
+Utilisation :
+
+1 - Installez Python 3 sur votre PC (Windows store par exemple)
+2 - Installer les bibliothèques openpyxl, glob2 et jinja2. Pour cela, faites les commandes suivantes une à une dans un CMD :
+pip install openpyxl
+pip install glob2
+pip install jinja2
+3 - Placez le spoiler_log de la seed dans le même dossier que le script (attention, il ne doit y en avoir qu'un seul)
+3 - Ouvrez un CMD à la racine du projet (là où se trouve le script hint.py)
+4 - Tapez la commande suivante : python3 hint.py
+5 - Les fichiers hint_list.txt et hint_list.xlsx seront générés dans le même dossier que le script (ne pas exécuter le script si un de ses fichiers est ouvert sur         votre PC
 
 Explication du script :
 
