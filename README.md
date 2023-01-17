@@ -1,6 +1,8 @@
 # TPR_Hint_Generator
 EN
 
+The online version if you want : https://tprhint.thoughtless.eu
+
 How to use :
 
 1 - Install Python 3 on your PC (Windows store for example)
@@ -78,6 +80,8 @@ Sometimes:
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 FR
+
+La version en ligne si vous voulez : https://tprhint.thoughtless.eu
 
 Utilisation :
 
