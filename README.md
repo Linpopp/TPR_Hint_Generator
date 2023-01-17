@@ -9,9 +9,13 @@ How to use :
 pip install openpyxl
 pip install glob2
 pip install jinja2
+
 3 - Place the spoiler_log of the seed in the same folder as the script (be careful, there should only be one)
+
 3 - Open a CMD at the root of the project (where the hint.py script is located)
+
 4 - Type the following command: python3 hint.py
+
 5 - The hint_list.txt and hint_list.xlsx files will be generated in the same folder as the script (do not run the script if one of these files is open on your PC)
 
 Script explanation:
