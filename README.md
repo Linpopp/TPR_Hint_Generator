@@ -52,31 +52,23 @@ Barren:
 
 Always:
 
-1 - Definition of checks as always
+1 - Defining checks in always
 
-2 - Definition of the list that will contain the items of the always checks
+2 - Defining the dictionary that will contain the items of the always checks
 
-3 - The script loops through the placement of the items in the spoiler log to find the always checks and their item
+3 - The script goes through the placement of items in the spoiler log to find the always checks and their item to store
 
 4 - It displays the items contained by the checks
 
 Sometimes:
 
-1 - Creation of a dictionary that stores all the names of dungeon checks and the name of the dungeon they are associated with
+1 - Defining checks in Sometimes
 
-2 - Declaration of a variable that will store all the dungeon checks that are barren
+2 - Defining the dictionary that will contain the items of the Sometimes checks
 
-3 - The script will look in the variable that contains the names of the barren dungeons (created previously in step 4 and 5 of "Barren") for the names of the corresponding checks for those dungeons.
+3 - The script goes through the placement of items in the spoiler log to find the Sometimes checks and their item to store
 
-4 - It will include them in the variable from step 2
-
-5 - Creation of a list that stores all the checks excluded in the ruleset
-
-6 - Creation of a list that stores all barren checks
-
-7 - Exclude from these lists the checks sometimes
-
-8 - Selects 3 checks randomly from the item placement list in the spoiler log, excluding the barren dungeon checks, the barren ones, and those excluded in the ruleset.
+4 - Selects 3 Sometimes randomly.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 FR
@@ -138,28 +130,18 @@ Always :
 
 1 - Définition des checks en always
 
-2 - Définition de la liste qui contiendra les items des checks always
+2 - Définition du dictionnaire qui contiendra les items des checks always
 
-3 - Le script parcourt le placement des items du spoiler log pour trouver les checks always et leur item
+3 - Le script parcourt le placement des items du spoiler log pour trouver les checks always et leur item pour les stocker
 
 4 - Il affiche les items contenu par les checks
 
 Sometimes :
 
-1 - Création d'un dictionnaire qui stock tous les noms de checks de donjons et le nom du donjon qui
-    leur est rattaché
-    
-2 - Déclaration d'une variable qui va stocker tous les checks des donjons qui sont barren
+1 - Définition des checks en Sometimes
 
-3 - Le script va chercher dans la variable qui contient les noms des donjons barren (créée précédemment
-    dans l'étape 4 et 5 de "Barren") les noms des checks correspondants à ces donjons.
-    
-4 - Il va les inclure dans la variable de l'étape 2
+2 - Définition du dictionnaire qui contiendra les items des checks Sometimes
 
-5 - Création d'une liste qui stock tous les checks exclus dans le ruleset
+3 - Le script parcourt le placement des items du spoiler log pour trouver les checks Sometimes et leur item pour les stocker
 
-6 - Création d'une liste qui stock tous les checks barren
-
-7 - Exclusion de ces listes aux checks sometimes
-
-8 - Sélectionne au hasard 3 checks de la liste du placement des items du spoiler log, en excluant les checks des donjons barren et ceux exclus dans le ruleset.
+4 - Sélectionne au hasard 3 Sometimes
