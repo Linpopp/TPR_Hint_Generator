@@ -84,7 +84,7 @@ for i in range(18, 20):
     worksheet.cell(row=i, column=2).font = openpyxl.styles.Font(italic=True)
 
 # List of important item names
-items = ["Progressive_Sword", "Progressive_Bow", "Progressive_Clawshot", "Progressive_Fishing_Rod", "Progressive_Sky_Book", "Progressive_Dominion_Rod", "Boomerang", "Lantern", "Spinner", "Ball_and_Chain", "Filled_Bomb_Bag" ,"Zora_Armor", "Gate_Key", "Shadow_Crytal" ]
+items = ["Progressive_Sword", "Progressive_Bow", "Progressive_Clawshot", "Progressive_Fishing_Rod", "Progressive_Sky_Book", "Progressive_Dominion_Rod", "Boomerang", "Lantern", "Spinner", "Ball_and_Chain", "Filled_Bomb_Bag" ,"Zora_Armor", "Gate_Key", "Shadow_Crytal", "Aurus_Memo", "Asheis_Sketch"]
 
 # Dictionary to store woth_items of items
 woth_items = {item: [] for item in items}
