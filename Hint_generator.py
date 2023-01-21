@@ -526,14 +526,42 @@ zones = {
 "Zoras Domain Waterfall Poe": "Zoras Domain",
 }
 
-# List to store WotH phrases
+# List to store WotH
 important_zones = []
 
-# List to store WotH zones
+# List to store WotH used for Barren
 woth_zone_list = []
 
 # List to store Barren zones
 unimportant_zones = []
+
+# Sometimes_checks list
+sometimes_checks = [
+"Faron Field Bridge Chest",
+"Eldin Lantern Cave Lantern Chest",
+"Lanayru Field Spinner Track Chest",
+"Lake Hylia Bridge Vines Chest",
+"Death Mountain Alcove Chest",
+"Lake Hylia Shell Blade Grotto Chest",
+"Outside Arbiters Grounds Lantern Chest",
+"Gerudo Desert Rock Grotto Lantern Chest",
+"Outside South Castle Town Tightrope Chest",
+"Gerudo Desert West Canyon Chest",
+"Snowpeak Cave Ice Lantern Chest",
+"Snowpeak Freezard Grotto Chest",
+"Zoras Domain Underwater Goron",
+"Ordon Ranch Grotto Lantern Chest",
+"Wrestling With Bo",
+"Snowboard Racing Prize",
+"Plumm Fruit Balloon Minigame",
+"Gerudo Desert South Chest Behind Wooden Gates",
+]
+
+# Always_checks list
+always_checks = ["Jovani 20 Poe Soul Reward", "Goron Springwater Rush", "Lanayru Ice Block Puzzle Cave Chest", "Iza Helping Hand"]
+
+# Create a set of excluded WotH checks
+excluded_woth_checks = set(always_checks + sometimes_checks)
 
 # Dungeon list
 dungeons = ["ForestTemple", "GoronMines", "LakebedTemple", "ArbitersGrounds", "SnowpeakRuins", "TempleOfTime", "CityInTheSky", "PalaceOfTwilight"]
@@ -545,8 +573,8 @@ required_dungeons = data["requiredDungeons"]
 for sphere_name, sphere in data["spheres"].items():
     # Iterate through the checks in each sphere
     for check_name, item in sphere.items():
-        # If the item is in the item list, add the associated checks to the good group
-        if item in items:
+        # but only if the check is not in the excluded WotH checks set
+        if item in items and check_name not in excluded_woth_checks:
             woth_items[item].extend([check_name])
 
 # Define WotH zones
@@ -610,9 +638,6 @@ for i in range(8, 10):
 for zone in selected_zones:
     print(f"{zone} is barren")
 
-# Always_checks list
-always_checks = ["Jovani 20 Poe Soul Reward", "Goron Springwater Rush", "Lanayru Ice Block Puzzle Cave Chest", "Iza Helping Hand"]
-
 # Dictionary to store checks and item linked to those checks
 always_items = {}
 
@@ -631,27 +656,6 @@ for check, item in always_items.items():
     with open('Hint_list.txt', "a") as file:
         file.write(f'{check} : {item}\n')
 
-# Sometimes_checks list
-sometimes_checks = [
-"Faron Field Bridge Chest",
-"Eldin Lantern Cave Lantern Chest",
-"Lanayru Field Spinner Track Chest",
-"Lake Hylia Bridge Vines Chest",
-"Death Mountain Alcove Chest",
-"Lake Hylia Shell Blade Grotto Chest",
-"Outside Arbiters Grounds Lantern Chest",
-"Gerudo Desert Rock Grotto Lantern Chest",
-"Outside South Castle Town Tightrope Chest",
-"Gerudo Desert West Canyon Chest",
-"Snowpeak Cave Ice Lantern Chest",
-"Snowpeak Freezard Grotto Chest",
-"Zoras Domain Underwater Goron",
-"Ordon Ranch Grotto Lantern Chest",
-"Wrestling With Bo",
-"Snowboard Racing Prize",
-"Plumm Fruit Balloon Minigame",
-"Gerudo Desert South Chest Behind Wooden Gates",
-]
 
 # Dictionary to store checks and item linked to those checks
 sometimes_items = {}
