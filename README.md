@@ -24,31 +24,36 @@ Script explanation:
 
 WotH:
 
-1 - Define a list of important items
+1 - Definition of a list of important items
 
-2 - The script loops through the spheres in the spoiler log, and for each match with the list and the item names in them, it puts the related checks for that item into an "important" group.
+2 - The script goes through the spoiler log spheres, and for each match with the item names of the important items list,
+    it puts the checks related to this item in an "important" group, excluding the always sometimes checks to avoid redundancy
+    
+3 - Creation of a dictionary which stores for each check of the game the zone which is attached to it,
+    (I used the gdoc for this)
+    
+4 - For each check of the list of important zones, the script will look at the zone that corresponds to this check and
+    to this check and put it in a list
+    
+5 - It selects 3 at random.
 
-3 - Create a dictionary that stores for each game check the "zone it is associated with" (I based this on the gdoc)
-
-4 - For each check in the important zones list, the script will look at the zone that corresponds to that check and bring it up in a list
-
-5 - It selects 3 randomly.
-
-Barren:
+Barren :
 
 1 - The script stores all the zone names in a list
 
 2 - It creates the variable that will store the barren zones
 
-3 - It puts all the content of the zone list in this variable, excluding the WotH zones
+3 - It puts in this variable all the content of the list of zones, I exclude from this variable the
+    zones WotH
+    
+4 - It creates a variable which lists all the names of dungeons
 
-4 - It creates a variable that lists all the dungeon names
+5 - Exclude from this variable the dungeons required to have the list of barren dungeons
 
-5 - It excludes from this variable the dungeons required to have the list of barren dungeons
+6 - Exclude from the Barren zones variable the content of the Barren dungeons variable
 
-6 - It excludes from the Barren zone variable the content of the barren dungeon variable
+7 - It selects 2 at random
 
-7 - It selects 2 randomly.
 
 Always:
 
@@ -97,23 +102,23 @@ Explication du script :
 
 WotH :
 
-1 - Définition une liste des items importants
+1 - Définition d'une liste des items importants
 
-2 - Le script parcourt les spheres du spoiler log, et pour chaque correspondance avec la liste et les
-    noms d'items dans celles-ci, il met les checks liés à cet item dans un groupe "important".
+2 - Le script parcourt les spheres du spoiler log, et pour chaque correspondance avec les noms d'items de la liste d'items importants,
+    il met les checks liés à cet item dans un groupe "important". en excluant les checks always sometimes pour éviter les redondances
     
-3 - Création d'un dictionnaire qui stock pour chaque check du jeu la "zone qui lui est rattachée",
+3 - Création d'un dictionnaire qui stock pour chaque check du jeu la zone qui lui est rattachée,
     (je me suis basé sur le gdoc pour ça)
     
-4 - Pour chaque check de la liste des zones importantes, il script va regarder la zone qui correspond
+4 - Pour chaque check de la liste des zones importantes, le script va regarder la zone qui correspond
     à ce check et la remonter dans une liste
     
-5 - Il en sélectionner 3 au hasard.
+5 - Il en sélectionne 3 au hasard.
 
 Barren :
 1 - Le script stock tout les noms de zones dans une liste
 
-2 - Il créer la variable qui va stocker les zones barren
+2 - Il créer la variable qui va par la suite stocker les zones barren
 
 3 - Il met dans cette variable tous le contenu de la liste des zones, j'exclus de cette variable les
     zones WotH
